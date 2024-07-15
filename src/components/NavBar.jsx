@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router-dom"
 import CartWidget from "./CartWidget"
 
 const NavBar = () => {
@@ -17,11 +18,13 @@ const NavBar = () => {
             </div>
           </div>
           {/* <a className="btn btn-ghost text-xl">The Shirt</a> */}
-          <img src="/images/logo.png"  style={{borderRadius: "50%", height:"50px", width:"50px"}}></img>
+          <Link to={"/"}>
+            <img src="/images/logo.png"  style={{borderRadius: "50%", height:"50px", width:"50px"}}></img>
+          </Link>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
-              <li><a>Camisetas Locales</a></li>
-              <li><a>Camisetas Internacionales</a></li>
+              <li><NavLink to={"/category/local"}>Camisetas Locales</NavLink></li>
+              <li><NavLink to={"/category/internacional"}>Camisetas Internacionales</NavLink></li>
             </ul>
           </div>
         </div>
