@@ -1,7 +1,11 @@
 import { Link, NavLink } from "react-router-dom"
 import CartWidget from "./CartWidget"
+import { useContext } from "react"
+import { CartContext } from "./context/CartContext"
+
 
 const NavBar = () => {
+  const {totalProducts} = useContext (CartContext);
   return (
     <>
       <div className="navbar bg-base-100">
@@ -31,27 +35,28 @@ const NavBar = () => {
         <div className="flex-none">
           <div className="dropdown dropdown-end">
             <CartWidget />
-            <div
+            {/* <div
               tabIndex={0}
               className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
               <div className="card-body">
-                <span className="text-lg font-bold">8 Items</span>
+                <span className="text-lg font-bold">{totalProducts()} Items</span>
                 <span className="text-info">Subtotal: $999</span>
                 <div className="card-actions">
                   <button className="btn btn-primary btn-block">Ver carrito</button>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="dropdown dropdown-end">
             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-              <div className="w-10 rounded-full">
-                <img
-                  alt="Tailwind CSS Navbar component"
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-              </div>
+              
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                </svg>
+
+              
             </div>
-            <ul
+            {/* <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
               <li>
@@ -62,7 +67,7 @@ const NavBar = () => {
               </li>
               <li><a>Configuración</a></li>
               <li><a>Salir</a></li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>

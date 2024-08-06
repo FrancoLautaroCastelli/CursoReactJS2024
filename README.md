@@ -1,8 +1,12 @@
-# React + Vite
+# The Shirt
+## ¡Bienvenido a The Shirt! Este es un ecommerce desarrollado con React.js y Vite, donde podés encontrar una variedad de camisetas.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Características:
 
-Currently, two official plugins are available:
+· Interfaz rápida y fluida gracias a la velocidad de desarrollo de Vite.  
+· Catálogo de productos para explorar y comprar camisetas.  
+· Carrito de compras para gestionar tus productos.  
+· Sistema de búsqueda para encontrar rápidamente lo que necesitás.  
+· ¡Explorá y hacé tus compras con facilidad! 🚀👕
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
